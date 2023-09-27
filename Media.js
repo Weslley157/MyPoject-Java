@@ -1,4 +1,3 @@
-alert("testando")
 //CRIA REFERÊNCIA AO FORM E ELEMENTOS DE RESPOSTA DO PROGRAMA
 const form = document.querySelector("form")
 const resp1 = document.querySelector("h3")
