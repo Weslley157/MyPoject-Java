@@ -1,15 +1,16 @@
-const form = document.querySelector('form');
-const resp = document.querySelector('pre')
+const frm = document.querySelector("form")
+const resp = document.querySelector("pre")
 
+//ouvinte
+frm.addEventListener("submit", (e) =>{
+    e.preventDefault()
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-   const numero = Number(frm.inNumero.value)
-   let resposta = ""
-   for(let i = 1; i <= 10; i++){
-    resposta = resposta + numero + " x " + i + " = " + (numero * i) + "\n"
-   }
-   resp.innerText = resposta
-
+    const numero = Number(frm.inNumero.value)
+    let resposta = ""
+//cria um laço de repetição
+    for(let i = 1; i <= 10; i++){
+        resposta = resposta + numero + " x " + i + " = " + (numero * i) + "\n"       
+    }
+    resp.innerText = resposta
+    
 })
